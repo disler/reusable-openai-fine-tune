@@ -1,0 +1,18 @@
+[project]
+name = "openai-fine-tune"
+version = "0.1.0"
+description = "Reusable OpenAI Fine-Tuning Script"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "openai>=1.42.0",
+    "python-dotenv>=1.0.1",
+    "typer>=0.12.4",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project.scripts]
+finetune = "openai_fine_tune.main:main"

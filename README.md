@@ -4,6 +4,14 @@
 ## Setup
 - Install [uv](https://docs.astral.sh/uv/getting-started/installation/)
 - Install dependencies `uv sync`
+- Set your OpenAI API key as an environment variable `export OPENAI_API_KEY=<your_api_key>`
+
+## Fine-Tune Process Example Commands
+- `uv run finetune upload-dataset datasets/example-sarcastic-factbot.jsonl` - Upload a the example dataset to the fine-tune API
+- `uv run finetune list-files` - List all files uploaded for fine-tuning. You should see `example-sarcastic-factbot.jsonl`
+- `uv run finetune train-model example-sarcastic-factbot.jsonl --model gpt-4o-2024-08-06` - Train a fine tuned model given the example dataset and base model
+- `uv run finetune list-jobs` - List all fine-tune jobs. You should see your job in the list
+- `uv run finetune fine-tune-prompt <model_name> <prompt> [--system-message <system_message>]` - After model training, send a prompt to a fine-tuned model and get the response
 
 ## Commands
 
@@ -35,6 +43,8 @@
 
 ### Common use cases
 > Some common use cases where fine-tuning can improve results:
+
+!(Add decision diagram here on when to fine-tune)[]
 
 - Setting the style, tone, format, or other qualitative aspects
 - Improving reliability at producing a desired output

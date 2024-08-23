@@ -107,7 +107,7 @@ def list_jobs():
 
 
 @app.command()
-def train_model(file_name: str, model: str = "gpt-4o-mini-2024-07-18"):
+def train_model(file_name: str, model: str = GPT_4o_MINI_2024_07_18):
     """
     Start a fine-tuning job with the specified file and model
 

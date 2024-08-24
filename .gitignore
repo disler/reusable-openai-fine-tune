@@ -46,5 +46,5 @@ data/
 
 
 # Ignore everything in dataset/ except example-sarcastic-factbot.jsonl
-dataset/*
-!dataset/example-sarcastic-factbot.jsonl
+datasets/*
+!datasets/example-sarcastic-factbot.jsonl

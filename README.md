@@ -107,7 +107,7 @@ graph TD
 
 ---
 
-### When to use fine-tuning (from OpenAI)
+### When to use fine-tuning ([from OpenAI](https://platform.openai.com/docs/guides/fine-tuning))
 Fine-tuning OpenAI text generation models can make them better for specific applications, but it requires a careful investment of time and effort. We recommend first attempting to get good results with prompt engineering, prompt chaining (breaking complex tasks into multiple prompts), and function calling, with the key reasons being:
 
 - There are many tasks at which our models may not initially appear to perform well, but results can be improved with the right prompts - thus fine-tuning may not be necessary
@@ -115,7 +115,7 @@ Fine-tuning OpenAI text generation models can make them better for specific appl
 - In cases where fine-tuning is still necessary, initial prompt engineering work is not wasted - we typically see best results when using a good prompt in the fine-tuning data (or combining prompt chaining / tool use with fine-tuning)
 - Our prompt engineering guide provides a background on some of the most effective strategies and tactics for getting better performance without fine-tuning. You may find it helpful to iterate quickly on prompts in our playground.
 
-### When to use fine-tuning (from Anthropic)
+### When to use fine-tuning ([from Anthropic](https://www.anthropic.com/news/fine-tune-claude-3-haiku))
 
 #### Overview of fine-tuning
 
@@ -133,7 +133,7 @@ Fine-tuning allows you to customize Claude 3 Haiku so it can acquire specialized
 
 - Consistent, brand-aligned formatting: Generate consistently structured outputs tailored to your exact specifications like standardized reports or custom schemas, ensuring compliance with regulatory requirements and internal protocols.
 
-### When to use fine-tuning (from Google Gemini)
+### When to use fine-tuning ([from Google Gemini](https://ai.google.dev/gemini-api/docs/model-tuning))
 
 Fine-tuning with the Gemini API
 
